@@ -5,7 +5,7 @@
 #include "Server.h"
 
 int main() {
-    Customer customer;
+    //Customer customer;
     ServiceCenter serviceCenter;
     serviceCenter.enterValues();
     FIFO fifo(serviceCenter.n);
