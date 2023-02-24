@@ -8,28 +8,15 @@ int main() {
     Customer customer;
     ServiceCenter serviceCenter;
     serviceCenter.enterValues();
-    Server server;
     FIFO fifo(serviceCenter.n);
+    //Server server;
     PQ pq;
     int j = 0;
-    while(j < 200) {
+    while (j < 200) {
+        std::cout << fifo.front << std::endl;
         pq.insert(fifo.front);
-        std::cout << pq.getMax();
-    }
+        std::cout << pq.getMax() << std::endl;
 
-    for (int i = 0; i < serviceCenter.m; i++) {
-        Server *server = new Server(i);
-        server[i].serverNumber = i;
-    }
-    int j = 0;
-    while (j < serviceCenter.n) {
-        Customer *customer = new Customer();
-        customer[j].customerNumber = j;
-    }
-    for (int i = 0; i < serviceCenter.n; i++) {
-        if (server.serverNumber == i && !server.isBusy) {
-            server.isBusy = true;
-            pq.remove(j);
-        }
+        j++;
     }
 }

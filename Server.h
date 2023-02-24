@@ -10,6 +10,7 @@ using namespace std;
 
 class Server {
 public:
+    Server();
     Server(int number) {
         this->isBusy = false;
         this->serverNumber = number;

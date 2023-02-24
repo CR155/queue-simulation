@@ -14,4 +14,6 @@ add_executable(queue_simulation
         ServiceCenter.cpp
         ServiceCenter.h
         PQ.cpp
-        PQ.h)
+        PQ.h
+        Server.cpp
+        Server.h)
