@@ -12,11 +12,12 @@ using namespace std;
 class Customer {
 public:
     Customer();
-    float arrivalTime; // Time arrived in FIFO queue
-    float startOfServiceTime; // Time arrived in PQ
-    float departureTime; // Time departed from PQ
-    float timeInterval; // How long it will take to be serviced, this
+    float arrivalTime = 0.0; // Time arrived in FIFO queue
+    float startOfServiceTime = 0.0; // Time arrived in PQ
+    float departureTime = 0.0; // Time departed from PQ
+    float timeInterval = 0.0; // How long it will take to be serviced, this
     int getRandomNextInterval(double);
+    int customerNumber;
     void print();
 };
 

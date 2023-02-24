@@ -2,9 +2,9 @@
 // Created by Chris Robinson on 2/21/23.
 //
 
-#include "Queue.h"
+#include "FIFO.h"
 
-void Queue::printAnalyticalModel() {
+void FIFO::printAnalyticalModel() {
     std::cout << timeInSystem << std::endl;
     std::cout << averagePeople << std::endl;
     std::cout << customerTimeInSystem << std::endl;

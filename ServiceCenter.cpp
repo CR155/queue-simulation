@@ -21,6 +21,15 @@ void ServiceCenter::print() {
     std::cout << "Arrivals in a time period: " << this->lambda << std::endl;
     std::cout << "Average number served in a time period: " << this->mu << std::endl;
 }
+
+void ServiceCenter::printAnalyticalModel() {
+    std::cout << timeInSystem << std::endl;
+    std::cout << averagePeople << std::endl;
+    std::cout << customerTimeInSystem << std::endl;
+    std::cout << averageCustomersInPQ << std::endl;
+    std::cout << averageCustomersInFIFO << std::endl;
+    std::cout << utilizationFactor << std::endl;
+}
 /*
 int ServiceCenter::GetNextRandomInterval(double avg) {
     float randomFloat = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
